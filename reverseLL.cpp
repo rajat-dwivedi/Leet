@@ -5,7 +5,7 @@ public:
         ListNode* prev = NULL,next=NULL;
         while (head) {
             next = head -> next;
-            head -> next = cur;
+            head -> next = prev;
             prev = head;
             head = next;
         }
