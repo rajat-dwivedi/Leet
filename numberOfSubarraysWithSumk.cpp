@@ -1,4 +1,10 @@
 //https://leetcode.com/problems/subarray-sum-equals-k/
+// Input : arr[] = {10, 2, -2, -20, 10}, 
+//         k = -10
+// Output : 3
+// Input : arr[] = {1, -1, 1, -1}, 
+//         k = 0
+// Output : 4
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
