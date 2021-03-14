@@ -1,5 +1,6 @@
 // previous_less[i] = j means A[j] is the previous less element of A[i].
 // previous_less[i] = -1 means there is no previous less element of A[i].
+//we are using monotone increase stack to help us
 vector<int> previous_less(A.size(), -1);
 for(int i = 0; i < A.size(); i++){
   while(!in_stk.empty() && A[in_stk.top()] > A[i]){
