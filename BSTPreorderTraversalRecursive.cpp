@@ -9,6 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// O(n) time and O(n)(function call stack) space complexity
 class Solution {
     void solve(vector<int>& res, TreeNode* root){
         if(root==NULL)
