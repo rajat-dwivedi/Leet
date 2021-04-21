@@ -10,6 +10,7 @@
  * };
  */
  //https://leetcode.com/problems/maximum-depth-of-binary-tree/
+//Time complexity = O(n)
 class Solution {
     int depth(TreeNode* n){
         if(n==NULL)
