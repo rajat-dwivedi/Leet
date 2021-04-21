@@ -10,6 +10,8 @@
  * };
  */
 // https://leetcode.com/problems/balanced-binary-tree/
+// for each level you are doing a total scan of N, and there are logN levels.
+
 class Solution {
 	public:
 		int height(TreeNode *root) {
