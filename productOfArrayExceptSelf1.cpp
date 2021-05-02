@@ -10,6 +10,7 @@ public:
         int product = 1;
         
         //saving prefix multiplicaiton in the res array for now
+        //res[i] = multiplication of nums[0] to nums[i]
         for(auto x: nums){
             product *= x;
             res.push_back(product);
