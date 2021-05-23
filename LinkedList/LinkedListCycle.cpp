@@ -15,7 +15,7 @@ public:
         ListNode* slow = head;
         ListNode* fast = head;
         //check if next and next of next exists to avoid null reference error
-        while(fast->next && fast->next->next){  
+        while(fast && fast->next){  
             slow=slow->next;
             fast = fast->next->next;
             if(slow==fast)
