@@ -2,7 +2,7 @@
 class Solution {
 public:
     int uniquePaths(int m, int n) {
-        int t[m+1][n+1];
+        int t[m][n];
         //we are assuming the star is moving to the robot
         //there will only be one path for all blocks in the first row that is to the left 
         //similary for all blocks in the first column
