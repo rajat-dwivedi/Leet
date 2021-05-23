@@ -4,18 +4,19 @@ public:
     int longestValidParentheses(string s) {
         stack<int> stk;
         stk.push(-1);
-        int maxL=0;
-        for(int i=0;i<s.size();i++)
-        {
-            int t=stk.top();
-            if(t!=-1&&s[i]==')'&&s[t]=='(')
-            {
-                stk.pop();
-                maxL=max(maxL,i-stk.top());
-            }
-            else
+        int ans = 0;
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] == '(') {
                 stk.push(i);
+            } else {
+                stk.pop();
+                if (stk.empty()) {
+                    stk.push(i);
+                } else {
+                    ans = max(ans, i - stk.top());
+                }
+            }
         }
-        return maxL;
+        return ans;
     }
 };
