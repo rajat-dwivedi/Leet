@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //time complexity of this solution is O(2N) as in the worst case the left pointer has to move all the way from the left upto the right, while the right is already moving in O(N) that total makes is O(2N)
 	int lengthOfLongestSubstring(string s) 
 	{
 		unordered_set<char> set;
