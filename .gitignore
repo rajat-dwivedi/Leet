@@ -1,0 +1,18 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files
+Icon?
+
+# Thumbnails
+._*
+
+# Files that might appear on network shares
+.Spotlight-V100
+.Trashes
+
+# macOS swap and cache files
+*.swp
+*.lock
